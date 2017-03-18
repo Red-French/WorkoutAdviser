@@ -11,16 +11,17 @@
 
     <Spinner
         android:id="@+id/workoutTypeSpinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="75dp"/>
-
-    <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Workouts Here!"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:entries="@array/workout_types"/>
+
+    <TextView
+        android:id="@+id/workoutDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Workouts Here!"
         android:layout_below="@+id/findWorkoutBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"/>
@@ -32,7 +33,8 @@
         android:text="new button"
         android:layout_marginTop="39dp"
         android:layout_below="@+id/workoutTypeSpinner"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickFindWorkout"/>
 
 
 </RelativeLayout>
